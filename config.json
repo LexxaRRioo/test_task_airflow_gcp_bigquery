@@ -1,0 +1,24 @@
+{
+    "api_endpoint": "/api/your_resource",
+    "api_http_conn_id": "your_http_connection_id_in_airflow",
+    "dag_schedule": "00 21 * * *",
+    "dag_sla": 15,
+    "dag_timeout": 20,
+    "empty_file_name": "empty-file.txt",
+    "gcp_conn_id": "your_gcp_connection_id_in_airflow",
+    "gcs_bucket_labels": ["test", "income", "backups"],
+    "gcs_bucket_name": "your_unique_bucket_name",
+    "gcs_bucket_storage_class": "STANDARD",
+    "location": "US-WEST1",
+    "project_id": "your-project-name",
+    "sftp_conn_id": "your_sftp_connection_id_in_airflow",
+    "sftp_path_to_empty": "path/to/empty-file.txt",
+    "sftp_path_to_table": "path/to/users_income",
+    "task1_target_dataset_id": "your_dataset_id",
+    "task1_target_table_name": "users_income",
+    "task1_target_table_labels": ["users", "income", "increment"],
+    "task2_target_dataset_id": "your_dataset_id_that_can_differ_from_task1_ds_id",
+    "task2_target_table_labels": ["users", "income","historical"],
+    "task2_target_table_name": "users_income_hist"
+}
+
